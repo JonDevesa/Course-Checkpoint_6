@@ -154,7 +154,6 @@ import requests
 
 respuesta = requests.get("https://api.agify.io/?name=Carlos")
 print(respuesta.json())
-# Ejemplo de salida: {'name': 'carlos', 'age': 34, 'count': 12345}
 ```
 
 ### Ejemplo gráfico de API
