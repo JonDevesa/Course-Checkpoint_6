@@ -50,7 +50,7 @@ La ventaja de `__init__` es que podemos pasarle argumentos desde el momento de l
 
 En la práctica, este método nos permite definir cómo queremos que nazcan nuestros objetos y asegurarnos de que siempre empiecen en un estado válido y consistente.
 
-en el siguiente ejemplo, la clase Persona se crea con un método __init__ que recibe el nombre y la edad como parámetros. Este constructor inicializa las variables de instancia para que cada objeto tenga su información propia.
+En el siguiente ejemplo, la clase Persona se crea con un método __init__ que recibe el nombre y la edad como parámetros. Este constructor inicializa las variables de instancia para que cada objeto tenga su información propia.
 
 Cuando se crea p1 = Persona("Verso", 33), automáticamente se ejecuta el __init__ y se asignan los valores "Verso" y 33 a los atributos nombre y edad.
 
