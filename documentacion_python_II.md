@@ -18,7 +18,7 @@ Posteriormente se definen dos personajes: Verso y Maelle, cada uno con diferente
 
 El método usar_habilidad permite que cada personaje realice una acción, mostrando en pantalla su nombre y la habilidad que utiliza. Este ejemplo demuestra cómo las clases permiten representar entidades de un juego de forma clara y organizada.
 
-### Ejemplo (personajes de *Clair Obscur: Expedition 33*):
+### Ejemplo de clases:
 
 ```python
 class Personaje:
@@ -56,7 +56,7 @@ Cuando se crea p1 = Persona("Verso", 33), automáticamente se ejecuta el __init_
 
 Luego, el método presentarse devuelve una cadena personalizada. Así se observa cómo el constructor facilita la creación de objetos con valores iniciales sin necesidad de pasos adicionales.
 
-### Ejemplo:
+### Ejemplo de __init__:
 
 ```python
 class Persona:
@@ -71,7 +71,7 @@ p1 = Persona("Verso", 33)
 print(p1.presentarse())
 ```
 
-### Ejemplo gráfico de **init**
+### Ejemplo gráfico de __init__
 ![init](imagenes/init.PNG)
 
 ---
@@ -92,14 +92,13 @@ El método requests.get() devuelve un objeto de respuesta, del que podemos consu
 
 Este ejemplo sirve para mostrar cómo un programa en Python puede comunicarse con un servidor mediante una API y recibir información estructurada.
 
-### Ejemplo en Python con la librería `requests`:
+### Ejemplo GET:
 
 ```python
 import requests
 
-# Ejemplo de GET
 respuesta = requests.get("https://api.github.com")
-print(respuesta.status_code)  # 200 significa OK
+print(respuesta.status_code)
 ```
 
 ### Ejemplo gráfico de GET
@@ -147,7 +146,7 @@ El método .json() convierte la respuesta en un diccionario de Python, lo que no
 
 Este ejemplo ilustra cómo las APIs permiten que aplicaciones externas proporcionen información útil que podemos integrar directamente en nuestros programas.
 
-### Ejemplo en Python usando una API pública:
+### Ejemplo de API:
 
 ```python
 import requests
@@ -188,7 +187,7 @@ La clase base Animal inicializa únicamente el atributo nombre, mientras que las
 
 Luego, al recorrer la lista de animales, cada objeto conserva su propia implementación de __init__, y muestra mensajes personalizados. Este ejemplo ilustra cómo el polimorfismo permite reutilizar el mismo método en clases relacionadas, adaptándolo a las necesidades de cada una.
 
-### Ejemplo:
+### Ejemplo de polimorfismo:
 
 ```python
 class Animal:
@@ -240,7 +239,7 @@ __len__: permite que la función nativa len() devuelva el número de páginas.
 
 De esta forma, el objeto mi_libro se comporta como si fuera parte nativa de Python, mostrando información útil y respondiendo a funciones habituales como len().
 
-### Ejemplo:
+### Ejemplo de método dunder:
 
 ```python
 class Libro:
@@ -255,8 +254,8 @@ class Libro:
         return self.paginas
 
 mi_libro = Libro("Python Básico", 250)
-print(mi_libro)       # Libro: Python Básico, 250 páginas
-print(len(mi_libro))  # 250
+print(mi_libro)
+print(len(mi_libro))
 ```
 
 ### Ejemplo gráfico de método dunder
@@ -276,7 +275,7 @@ En el ejemplo, se crea un decorador llamado mayusculas que recibe una función c
 
 El decorador se aplica a la función saludar usando @mayusculas. De esta manera, cuando llamamos a la funcion decorada saludar(), el texto "hola mundo" se transforma automáticamente en "HOLA MUNDO".
 
-### Ejemplo:
+### Ejemplo de decorador:
 
 ```python
 def mayusculas(funcion):
@@ -289,10 +288,8 @@ def mayusculas(funcion):
 def saludar():
     return "hola mundo"
 
-print(saludar())  # HOLA MUNDO
+print(saludar())
 ```
 
 ### Ejemplo gráfico de decorador
 ![Decorador](imagenes/decorador.PNG)
-
-
