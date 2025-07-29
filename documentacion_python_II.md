@@ -12,11 +12,11 @@ Usamos clases porque representan de manera natural entidades del mundo real. Por
 
 Además, las clases fomentan la reutilización del código: a partir de una misma clase podemos crear múltiples instancias (objetos) con características propias, sin necesidad de escribir código repetitivo. Esto las convierte en una herramienta clave para construir aplicaciones escalables y fáciles de extender.
 
-En el siguiente ejemplo creamos la clase Personaje, que actúa como plantilla para definir personajes de un videojuego. El método especial __init__ se usa para inicializar sus caracteristicas: nombre, nivel y habilidad. Así, cada vez que instanciamos un personaje, podemos personalizar sus características.
+En el siguiente ejemplo creamos la clase Personaje, que actúa como plantilla para definir personajes de un videojuego. El método especial `__init__` se usa para inicializar sus caracteristicas: nombre, nivel y habilidad. Así, cada vez que instanciamos un personaje, podemos personalizar sus características.
 
 Posteriormente se definen dos personajes: Verso y Maelle, cada uno con diferentes valores. Ambos comparten la misma estructura, pero con atributos propios.
 
-El método usar_habilidad permite que cada personaje realice una acción, mostrando en pantalla su nombre y la habilidad que utiliza. Este ejemplo demuestra cómo las clases permiten representar entidades de un juego de forma clara y organizada.
+El método `usar_habilidad()` permite que cada personaje realice una acción, mostrando en pantalla su nombre y la habilidad que utiliza. Este ejemplo demuestra cómo las clases permiten representar entidades de un juego de forma clara y organizada.
 
 ### Ejemplo de clases:
 
@@ -52,7 +52,7 @@ En la práctica, este método nos permite definir cómo queremos que nazcan nues
 
 En el siguiente ejemplo, la clase Persona se crea con un método `__init__` que recibe el nombre y la edad como parámetros. Este constructor inicializa las variables de instancia para que cada objeto tenga su información propia.
 
-Cuando se crea p1 = Persona("Verso", 33), automáticamente se ejecuta el __init__ y se asignan los valores "Verso" y 33 a los atributos nombre y edad.
+Cuando se crea p1 = Persona("Verso", 33), automáticamente se ejecuta el `__init__` y se asignan los valores "Verso" y 33 a los atributos nombre y edad.
 
 Luego, el método presentarse devuelve una cadena personalizada. Así se observa cómo el constructor facilita la creación de objetos con valores iniciales sin necesidad de pasos adicionales.
 
