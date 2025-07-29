@@ -231,13 +231,13 @@ De esta manera, los métodos dunder nos permiten personalizar cómo se comportan
 
 En el ejemplo, la clase Libro tiene tres métodos dunder:
 
-__init__: inicializa los atributos titulo y paginas.
+`__init__`: inicializa los atributos titulo y paginas.
 
-__str__: define el texto que se muestra cuando imprimimos el objeto con print().
+`__str__`: define el texto que se muestra cuando imprimimos el objeto con print().
 
-__len__: permite que la función nativa len() devuelva el número de páginas.
+`__len__`: permite que la función nativa len() devuelva el número de páginas.
 
-De esta forma, el objeto mi_libro se comporta como si fuera parte nativa de Python, mostrando información útil y respondiendo a funciones habituales como len().
+De esta forma, el objeto `mi_libro` se comporta como si fuera parte nativa de Python, mostrando información útil y respondiendo a funciones habituales como `len()`.
 
 ### Ejemplo de método dunder:
 
