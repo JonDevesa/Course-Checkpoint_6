@@ -44,7 +44,7 @@ print(maelle.usar_habilidad())
 
 ## ¿Qué método se ejecuta automáticamente cuando se crea una instancia de una clase?
 
-En Python, cuando se crea un nuevo objeto de una clase, se ejecuta automáticamente el método especial ``, conocido como **constructor**. Este método sirve para inicializar el objeto, asignando valores a sus atributos y preparándolo para su uso inmediato.
+En Python, cuando se crea un nuevo objeto de una clase, se ejecuta automáticamente el método especial `__init__`, conocido como **constructor**. Este método sirve para inicializar el objeto, asignando valores a sus atributos y preparándolo para su uso inmediato.
 
 La ventaja de `__init__` es que podemos pasarle argumentos desde el momento de la creación de la instancia, en lugar de tener que configurar manualmente cada atributo después. Esto hace que el código sea más compacto, legible y menos propenso a errores.
 
