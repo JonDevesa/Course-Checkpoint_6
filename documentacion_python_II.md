@@ -50,7 +50,7 @@ La ventaja de `__init__` es que podemos pasarle argumentos desde el momento de l
 
 En la práctica, este método nos permite definir cómo queremos que nazcan nuestros objetos y asegurarnos de que siempre empiecen en un estado válido y consistente.
 
-En el siguiente ejemplo, la clase Persona se crea con un método __init__ que recibe el nombre y la edad como parámetros. Este constructor inicializa las variables de instancia para que cada objeto tenga su información propia.
+En el siguiente ejemplo, la clase Persona se crea con un método `__init__` que recibe el nombre y la edad como parámetros. Este constructor inicializa las variables de instancia para que cada objeto tenga su información propia.
 
 Cuando se crea p1 = Persona("Verso", 33), automáticamente se ejecuta el __init__ y se asignan los valores "Verso" y 33 a los atributos nombre y edad.
 
@@ -181,11 +181,11 @@ Esto resulta útil porque podemos tratar diferentes objetos de manera uniforme s
 
 De esta manera, el polimorfismo fomenta la reutilización del código y hace que los programas sean más flexibles y fáciles de expandir.
 
-En este caso, el polimorfismo se muestra a través del método especial __init__, que todas las clases comparten pero implementan de manera diferente.
+En este caso, el polimorfismo se muestra a través del método especial `__init__`, que todas las clases comparten pero implementan de manera diferente.
 
-La clase base Animal inicializa únicamente el atributo nombre, mientras que las clases hijas Perro y Gato amplían la inicialización sobre escribiendo el método ‘hacer_sonido’, para que este método ahora muestre “Monoco hace Guau!” en lugar de “El animal hace algún sonido”, en el caso de el perro llamado Monoco y "Esquie hace Miau!" en el caso del gato llamado Esquie. Para no repetir la lógica, ambas usan super().__init__(nombre), que llama al constructor de la clase padre y asegura que el atributo nombre se asigne correctamente.
+La clase base Animal inicializa únicamente el atributo nombre, mientras que las clases hijas Perro y Gato amplían la inicialización sobre escribiendo el método `hacer_sonido()`, para que este método ahora muestre “Monoco hace Guau!” en lugar de “El animal hace algún sonido”, en el caso de el perro llamado Monoco y "Esquie hace Miau!" en el caso del gato llamado Esquie. Para no repetir la lógica, ambas usan `super().__init__(nombre)`, que llama al constructor de la clase padre y asegura que el atributo nombre se asigne correctamente.
 
-Luego, al recorrer la lista de animales, cada objeto conserva su propia implementación de __init__, y muestra mensajes personalizados. Este ejemplo ilustra cómo el polimorfismo permite reutilizar el mismo método en clases relacionadas, adaptándolo a las necesidades de cada una.
+Luego, al recorrer la lista de animales, cada objeto conserva su propia implementación de `__init__`, y muestra mensajes personalizados. Este ejemplo ilustra cómo el polimorfismo permite reutilizar el mismo método en clases relacionadas, adaptándolo a las necesidades de cada una.
 
 ### Ejemplo de polimorfismo:
 
@@ -271,9 +271,9 @@ Los decoradores son muy útiles porque permiten reutilizar lógica común, como 
 
 Se usan ampliamente en frameworks como Flask y Django, donde decoradores como `@app.route` permiten definir rutas web de forma sencilla y legible.
 
-En el ejemplo, se crea un decorador llamado mayusculas que recibe una función como argumento. Dentro, define una función interna envoltura() que llama a la función original y transforma su resultado a mayúsculas antes de devolverlo.
+En el ejemplo, se crea un decorador llamado mayusculas que recibe una función como argumento. Dentro, define una función interna `envoltura()` que llama a la función original y transforma su resultado a mayúsculas antes de devolverlo.
 
-El decorador se aplica a la función saludar usando @mayusculas. De esta manera, cuando llamamos a la funcion decorada saludar(), el texto "hola mundo" se transforma automáticamente en "HOLA MUNDO".
+El decorador se aplica a la función saludar usando `@mayusculas`. De esta manera, cuando llamamos a la funcion decorada `saludar()`, el texto "hola mundo" se transforma automáticamente en "HOLA MUNDO".
 
 ### Ejemplo de decorador:
 
